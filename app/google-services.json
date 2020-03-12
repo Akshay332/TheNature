@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "251604095877",
+    "firebase_url": "https://the-nature-ab27d.firebaseio.com",
+    "project_id": "the-nature-ab27d",
+    "storage_bucket": "the-nature-ab27d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251604095877:android:4d928e01a72469c0c86aec",
+        "android_client_info": {
+          "package_name": "com.nature.thenature"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251604095877-o4teqct9d9lqauusjsh3nf9j8nq2eenk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nature.thenature",
+            "certificate_hash": "f30ae618b32a8f958b86a0d7f567c3bc04cd2b2b"
+          }
+        },
+        {
+          "client_id": "251604095877-llagpcbpmjcv25vit2svvmpsetejktfs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nature.thenature",
+            "certificate_hash": "bd4896d81d7e59f7bc9436f2dd7fae510a863e67"
+          }
+        },
+        {
+          "client_id": "251604095877-mfl1outd8anmoutavkko73dj98du0hlk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBySMlwRUyJomFQhKyQEx_ux_dn_fIiqUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251604095877-trepubls24b1tle2ebicvio4vo86f8kr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">The Nature</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">SignIn</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account ? Sign Up!</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="signup">Signup</string>
+    <string name="already_have_an_account">already have an account? SignIn</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="home">Home</string>
+    <string name="about">About</string>
+    <string name="profile">Profile</string>
+    <string name="name">Name</string>
+    <string name="change_password">Change Password</string>
+    <string name="change_email_address">Change Email Address</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="old_paswword">Old Paswword</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="change_email">Change Email</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="nature">Nature</string>
+    <string name="user_name">User Name</string>
+    <string name="explore">Explore</string>
+    <string name="no_favourite_photos">No favourite photos</string>
+    <string name="favourites">Favourites</string>
+    <string name="developer">Developer</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="version">Version 1.2.2</string>
+    <string name="dev_name">__nature_lover</string>
+    <string name="version_name">1.0</string>
+    <string name="info">Info</string>
+    <string name="search_here">Search here...</string>
+    <string name="signin_with_google">SignIn with Google</string>
+
+
+</resources>

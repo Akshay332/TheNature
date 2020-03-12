@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/iv_nature"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/activity_login_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/iv_nature"
+        app:layout_constraintStart_toStartOf="@id/iv_nature"
+        app:layout_constraintTop_toTopOf="@id/iv_nature"
+        app:layout_constraintVertical_bias="0.35">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/activity_login_Edittext_email_Textlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextInputLayoutTheme"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/activity_login_Edittext_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/ic_email_24dp"
+                    android:drawablePadding="4dp"
+                    android:drawableTint="@color/colorYellow"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    tools:ignore="RtlCompat"
+                    tools:targetApi="m" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/activity_login_Edittext_pasword_Textlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:theme="@style/TextInputLayoutTheme"
+                app:layout_constraintTop_toBottomOf="@id/activity_login_Edittext_email_Textlayout"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorYellow">
+
+                <EditText
+                    android:id="@+id/activity_login_Edittext_pasword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/ic_lock_black_24dp"
+                    android:drawablePadding="4dp"
+                    android:drawableTint="@color/colorYellow"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    tools:ignore="RtlCompat" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/activity_SignIn_Btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_btn_shape"
+                android:drawableStart="@drawable/ic_firebase"
+                android:fontFamily="@font/adamina"
+                android:foreground="?selectableItemBackgroundBorderless"
+                android:paddingStart="6dp"
+                android:paddingEnd="32dp"
+                android:text="@string/sign_in"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintTop_toBottomOf="@id/activity_login_Edittext_pasword_Textlayout"
+                tools:targetApi="m" />
+
+            <Button
+                android:id="@+id/google_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/white_btn_shape"
+                android:drawableStart="@drawable/ic_google"
+                android:fontFamily="@font/adamina"
+                android:paddingStart="6dp"
+                android:paddingEnd="20dp"
+                android:foreground="?selectableItemBackgroundBorderless"
+                android:text="@string/signin_with_google"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintTop_toBottomOf="@id/activity_SignIn_Btn"
+                tools:targetApi="m" />
+
+            <androidx.core.widget.ContentLoadingProgressBar
+                android:id="@+id/loading"
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:indeterminateTint="@color/colorYellow"
+                android:visibility="gone"
+                app:layout_constraintVertical_bias="0.4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:targetApi="lollipop" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/activity_txtv_forgotpaswrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="?android:selectableItemBackground"
+        android:fontFamily="@font/adamina"
+        android:text="@string/forgot_your_password"
+        android:textStyle="bold"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="@id/activity_login_card"
+        app:layout_constraintStart_toStartOf="@id/activity_login_card"
+        app:layout_constraintTop_toBottomOf="@id/activity_login_card"
+        tools:targetApi="jelly_bean" />
+
+    <TextView
+        android:id="@+id/activity_txtv_DonthaveaccountSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="?android:selectableItemBackground"
+        android:fontFamily="@font/adamina"
+        android:text="@string/don_t_have_an_account_sign_up"
+        android:textSize="16sp"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="@id/activity_txtv_forgotpaswrd"
+        app:layout_constraintStart_toStartOf="@id/activity_txtv_forgotpaswrd"
+        app:layout_constraintTop_toBottomOf="@id/activity_txtv_forgotpaswrd"
+        tools:targetApi="jelly_bean" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
